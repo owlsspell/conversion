@@ -1,0 +1,57 @@
+@import "~bootstrap/scss/bootstrap";
+
+.userCard {
+
+  p {
+    color: rgba(0, 0, 0, 0.404);
+    font-weight: normal;
+  }
+
+  .userAvatar,
+  .avatarDefault {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: 20px auto;
+  }
+
+  .info {
+    width: 100%;
+
+    .impression {
+      color: #cf5252;
+    }
+
+    .conversion {
+      color: #2962ad
+    }
+
+    .resultSum {
+      color: #01a30f;
+      font-size: 1.5em;
+    }
+
+    .impression,
+    .conversion,
+    .resultSum {
+      font-weight: 700;
+    }
+
+    p {
+      color: rgba(0, 0, 0, 0.404);
+      font-weight: normal;
+    }
+
+  }
+
+  .card-text {
+    text-align: left;
+  }
+}
+
+.diagram {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
