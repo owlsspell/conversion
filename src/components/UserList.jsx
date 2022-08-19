@@ -14,10 +14,11 @@ import defaultImg from "../images/apple.webp"
 export default function UserList() {
 
   const [users, setUsers] = useState([])
-  const [offset, setOffset] = useState("itrE0aiV8CObkdQ7j/rec8BM8YxS0lQ23yO")
+  const [offset, setOffset] = useState("")
   useEffect(() => {
     getUserList().then(res => {
       setUsers(res.records);
+      setOffset(res.offset)
     })
   }, [])
   
